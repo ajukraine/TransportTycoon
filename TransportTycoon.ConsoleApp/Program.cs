@@ -6,7 +6,9 @@ namespace TransportTycoon.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var output = Solution.Solve(args[0]);
+
+            System.Console.WriteLine(output);
         }
     }
 }
