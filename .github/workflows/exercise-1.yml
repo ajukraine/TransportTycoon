@@ -1,0 +1,19 @@
+name: Exercise 1
+
+env:
+  DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
+
+on: [push]
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.300
+      - run: dotnet build Exercise-1/TransportTycoon.ConsoleApp
+      - run: dotnet test Exercise-1/TransportTycoon.Tests
