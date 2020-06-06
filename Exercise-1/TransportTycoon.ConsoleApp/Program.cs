@@ -1,4 +1,4 @@
-﻿using System;
+﻿using TransportTycoon.Domain;
 
 namespace TransportTycoon.ConsoleApp
 {

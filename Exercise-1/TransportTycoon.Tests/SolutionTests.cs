@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using TransportTycoon.ConsoleApp;
+using TransportTycoon.Domain;
 
 namespace TransportTycoon.Tests
 {
